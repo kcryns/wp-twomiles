@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+html{
+    overflow-x:hidden;
+}
+
+@layer components{
+    .toggle__menu span{
+        width: 2rem;
+        height: .2rem;
+        background-color: black;
+        display: block;
+        border-radius: 5rem;
+        transition: .5s ease;
+        
+    }
+    .toggle__menu{
+        @apply ease-in duration-[300ms]
+    }
+    .toggle__menu.open{
+        @apply rotate-[360deg] ease-in duration-[500ms]
+    }
+    .toggle__menu span:nth-child(2){
+        @apply my-[.3rem]  rotate-[90];
+    }
+    .toggle__menu.open span:first-child{
+        @apply rotate-[35deg] w-[1.2rem] translate-x-[.9rem] translate-y-[.2rem] 
+    }
+    .toggle__menu.open span:last-child{
+        @apply rotate-[-35deg] w-[1.2rem] translate-x-[.9rem] translate-y-[-.2rem] 
+    }
+
+    .header__nav ul{
+        @apply absolute bg-white right-0 top-[4.65rem] w-0 h-[100vh] overflow-hidden p-0 z-[999] lg:static lg:w-full lg:h-auto;
+    }
+    .header__nav ul li:not(:first-child), .header__nav ul li:not(:last-child){
+        @apply mx-[0rem] lg:mx-[1rem];
+    }
+    .header__nav ul.open{
+        @apply w-[50%]  p-[2rem];
+    }
+    .arjay.show{
+        @apply w-full;
+    }
+    .posts .Pcards .cards:hover{
+        @apply bg-[#1f285b]
+    }
+    .posts .Pcards .cards:hover .pcontent h3 {
+        @apply text-white
+    }
+    .posts .Pcards .cards:hover .pcontent p {
+        @apply text-white
+    }
+    .posts .Pcards .cards:hover .pcontent a {
+        @apply text-white
+    }
+    .posts .Pcards .cards:hover{
+        @apply duration-[.5s] ease-in-out
+    }
+
+    .categs .Ccards .cards:hover{
+        @apply bg-[#1f285b]
+    }
+    .categs .Ccards .cards:hover .ccontent h3 {
+        @apply text-white
+    }
+    .categs .Ccards .cards:hover .ccontent p {
+        @apply text-white
+    }
+    .categs .Ccards .cards:hover .ccontent a {
+        @apply text-white
+    }
+    .categs .Ccards .cards:hover{
+        @apply duration-[.5s] ease-in-out
+    }
+
+}
