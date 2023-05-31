@@ -1341,7 +1341,7 @@ html {
   color: #737373;
   font-size: 1.1rem;
 }
-.searchresult .result ul li p a {
+.searchresult .result ul li a {
   color: #00b4da;
 }
 
@@ -1386,4 +1386,127 @@ html {
 .searchresult .recentpost ul li p {
   color: #737373;
   font-size: 1.1rem;
+}
+
+/* single page */
+
+.single {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.single__wrapper {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.single h1 {
+  font-size: 1.9rem;
+  font-weight: 650;
+  color: #1f285b;
+  margin: 2.5rem 0;
+}
+
+.single__left ul li {
+  display: flex;
+}
+
+.single__left ul li p {
+  color: #737373;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.single__left ul li span {
+  color: #e2bb32;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.single__icon {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin: 1rem 0;
+}
+
+.single__icon a {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.single__icon a:nth-child(1) {
+  background-color: #0166ff;
+}
+
+.single__icon a:nth-child(2) {
+  background-color: #007bb5;
+}
+
+.single__icon a i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.single__text p {
+  color: #737373;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.single .recentpost h3 {
+  color: #1f285b;
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.single .recentpost h3:before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 1px;
+  background-color: rgb(0, 0, 0, 0.3);
+  right: 0;
+  top: 50%;
+}
+
+.single .recentpost ul li {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: solid 1px rgb(0, 0, 0, 0.3);
+}
+
+.single .recentpost ul li i {
+  color: #1f285b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.single .recentpost ul li h4 {
+  color: #1f285b;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.single .recentpost ul li p {
+  color: #737373;
+  font-size: 1.1rem;
+}
+
+.posts h1 {
+  font-size: 1.9rem;
+  font-weight: 650;
+  color: #737373;
+  margin: 2.5rem 0;
 }

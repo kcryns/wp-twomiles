@@ -46,7 +46,7 @@
                         <div class="pcontent p-[1rem]">
                             <h3 class="text-tmblue text-[1.3rem] mb-[1rem] font-bold pt-[1rem] lg:text-[1.5rem] "><?php the_title();?></h3>
                             <p class="text-gray-500 mb-7 lg:text-[1rem]"><?php the_content();?></p>
-                            <a href="" class="text-dark"><?php echo get_field('read_more')?></a>
+                            <a href="<?php echo get_the_permalink();?>" class="text-dark"><?php echo get_field('read_more')?></a>
                         </div>   
                     </div>
                 <?php 

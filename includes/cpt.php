@@ -16,7 +16,7 @@ function twomiles_cpt() {
         'public'    => true,
         'capability_type'    => 'post',
         'show_ui'    => true,
-        'taxonomies'    => array('post_tag' , 'category'),
+        'taxonomies'    => array('post_tag' , 'category' ,),
         'supports'    => array('title' , 'editor' , 'thumbnail' , 'excerpt'),
 
     );
